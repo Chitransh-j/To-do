@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background: rgb(0,148,210);
+  background: linear-gradient(90deg, rgba(0,148,210,1) 33%, rgba(20,108,148,1) 75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #1A1A40;
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 5px;
+
+}
+
+.TodoForm {
+  width: 100%;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid ;
+  border-color: rgb(0,148,210);
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  border-radius: 2px;;
+  margin-left: 1rem;
+  background: rgb(20,108,148);
+  background: linear-gradient(90deg, rgba(20,108,148,1) 24%, rgba(0,148,210,1) 65%);
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.Todo:hover{
+  background:rgba(223, 223, 223, 0.2);
+}
+
+.todo-input:focus {
+  background-color:rgba(223, 223, 223, 0.1);
+  transform: scale(1.02);
+  box-shadow: 1px 1px 2px #cfcfcf,
+             -1px -1px 2px #ffffff;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+ 
+
+@media screen and (max-width:740px) {
+  .TodoWrapper {
+    width:80%;
+    margin:auto;
+    background: #1A1A40;
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 5px;
+  }
+
+  .todo-btn {
+    margin-bottom: 2rem;
+  }
+
+  .todo-input{
+    width: 80%;
+  
+  }
+}
+
+.credit{
+  color: #6afbe5;
+  transform: translate(0%,250%);
+}
